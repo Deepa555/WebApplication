@@ -1,7 +1,1 @@
-$msbuildpath="C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBuild.exe"
-Set-Alias MSBuildExe $msbuildpath
-Write-Host "Building the project" 
-$destpath="C:\Alarmnet1"
-New-Item $destpath -ItemType directory
-MSBuildExe WebApplication1.sln
-Write-Host "Building the Sucess" 
+dotnet build WebApplication1.sln --configuration Release
